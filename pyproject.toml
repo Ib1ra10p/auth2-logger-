@@ -1,0 +1,6 @@
+[build-system]
+requires = ["flask", "requests"]
+build-backend = "flask"
+
+[tool.vercel]
+entrypoint = "app.py"
